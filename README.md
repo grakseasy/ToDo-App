@@ -4,4 +4,4 @@ ToDo app created with PHP and MySQL, with the use of XAMPP to create a local ser
 
 note: implement a weather/calendarAPI above it
 
-![2](https://user-images.githubusercontent.com/48414851/181841251-cd89b2b0-ecdf-4dd3-9092-e7e5a05ee14a.PNG)
+![todo](https://user-images.githubusercontent.com/48414851/186632974-657de1b9-7858-40c3-b6d6-fb1e5c109d78.PNG)
