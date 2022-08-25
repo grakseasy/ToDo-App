@@ -37,10 +37,13 @@
     <title>ToDo App</title>
   </head>
   <body class="bg-secondary">
-    <div class="container bg-dark border shadow mt-5">
+    <div class="container bg-dark border shadow mt-5" style="border-radius: 20px;">
 
         <div class="heading text-white">
-            <h2 class="m-3" style="font-style: 'Hervetica'; text-align: center;">ToDo List App with PHP and MySQL</h2>
+            <div class="pb-2"></div>
+        <div class="border border-white p-2" style="width: fit-content; border-radius: 20px;">Weather/Calendar API here</div>
+    
+        <h2 class="m-3" style="font-style: 'Hervetica'; text-align: center;">ToDo List App</h2>
         </div>
         <form method="post" action="index.php" class="input_form">
             <div class="text-white" style="text-align: center;">
@@ -50,12 +53,12 @@
             </div>
             <div style="text-align: center;" class="mb-4">
                   <input type="text" name="task" class="task_input bg-white">
-                  <button style="font-weight: bold;" type="submit" name="submit" id="add_btn" class="add_btn bg-white button rounded ">Add Task</button>
+                  <button style="font-weight: bold;" type="submit" name="submit" id="add_btn" class="add_btn bg-white button rounded border">Add</button>
             </div>
 
         </form>
 
-        <table class="table border border-dark table-striped table-dark">
+        <table style="border-radius: 20px;" class="table border border-dark table-striped table-dark">
             <thead>
                 <tr>
                     <th>Task Number</th>
@@ -64,7 +67,7 @@
                 </tr>
             </thead>
 
-            <tbody class="p-3">
+            <tbody class="p-3" style="border-radius: 20px;">
                 <?php 
                 // select all tasks if page is visited or refreshed
                 $tasks = mysqli_query($db, "SELECT * FROM tasks");
@@ -76,7 +79,7 @@
                         <td> <?php echo $i; ?> </td>
                         <td class="task"> <?php echo $row['task']; ?> </td>
                         <td class="delete"> 
-                            <a class="text-white" href="index.php?del_task=<?php echo $row['id'] ?>"><button class="btn-white"> <span style="font-weight: bold;">X</span></button></a> 
+                            <a class="text-white" href="index.php?del_task=<?php echo $row['id'] ?>"><span style="font-weight: bold;">X</span></a> 
                         </td>
                     </tr>
 
